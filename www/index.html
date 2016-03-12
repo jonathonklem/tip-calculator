@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Tip Calculator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/rangeslider.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/rangeslider.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<body>
+		<ul class="nav">
+			<li class="active"><a data-target=".home-screen">CALCULATOR</a></li>
+			<li><a data-target=".about-screen">ABOUT</a></li>
+		</ul>
+		<div class="home-screen panel">
+			<h2>Tip Calculator</h2>
+			<section>
+				<output></output>
+				<input type="range" name="bill" id="bill" step=".01" value="10" min="0" max="200" data-rangeslider>
+			</section>
+			<section>
+				<output></output>
+				<input type="range" name="tip-percent" id="tip-percent" step="1" value="20" min="0" max="100" data-rangeslider>	
+			</section>
+			<section>
+				<output></output>
+				<input type="range" name="split-ways" id="split-ways" step="1" value="1" min="1" max="10" data-rangeslider>
+			</section>
+			<section>
+				<dl>
+					<dt>Tip:</dt><dd>$<span id="tip-total"></span></dd>
+					<dt>Total:</dt><dd class="total-line">$<span id="grand-total"></span></dd>
+					<dt>Per Person:</dt><dd>$<span id="per-person"></span></dd>
+				</dl>
+			</section>
+		</div>
+		<div class="about-screen panel">
+			<h2>About</h2>
+
+			<p>There are far too many crappy apps with interstitial and banner ads making a bad experience worse.  It's much more than just an annoyance it's a privacy concern.  A lot of free apps are gathering usage statistics about their users.  My goal is to provide crappy apps without ads that don't gather any data.</p>
+
+			<p>If you enjoyed using this app, you may enjoy some of the other apps that I've written.  A list of them can be view <a href="http://jonathonklem.com/apps">by clicking here</a>.  While you're there, feel free to peruse my developer blog if you're in to that sort of thing.</p>
+
+			<p>I also do web application development professionally.  If you're interested in working with me, you can visit my business contact page <a href="http://dayat.net/contact/">here</a>.</p>
+
+			<p>Lastly, are you a freelancer or do you aspire to become one?  Check out my website <a href="http://www.teachmetofreelance.com/">TeachMeToFreelance.com</a>.  I write a lot on how to grow a freelancing business and how to deal with problems that freelancers face.  Additionally I've written an e-book on the subject which can be purchased by clicking the book thumbnail below:<br>
+				<a href="http://amzn.to/1UmtJzv"><img src="img/ebook.jpg"></a></p>
+
+			<p>Even if you don't purchase the e-book if you use that or <a href="http://amzn.to/1UmtJzv">this</a> link before making a purchase on amazon a percentage of the commission will go towards continuing to support me cranking out crappy apps with no ads or data gathering!</p>
+		</div>
+	</body>
+</html>
