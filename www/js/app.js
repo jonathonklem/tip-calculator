@@ -89,7 +89,7 @@ $(document).ready(function() {
 
 	$('.about-screen').fadeOut();
 	
-	$('.nav a').click(function() {
+	/*$('.nav a').click(function() {
 		$('.panel').fadeOut();
 		target = $(this).data('target');
 
@@ -99,5 +99,5 @@ $(document).ready(function() {
 
 		$('.active').removeClass('active');
 		$(this).parent().addClass('active');
-	});
+	});*/
 })

@@ -22,7 +22,7 @@ ul.nav {
 }
 .nav li {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     background: #393D3F;
     color: #E6E6E6;
     padding: 12px 0px;
